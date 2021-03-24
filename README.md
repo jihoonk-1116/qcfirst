@@ -8,13 +8,15 @@ By Asif Gani & Chihoon Kim
 * [Site](#sitemap)
 * [Login Page](#login)
 * [Sign-up Page](#sign-up)
+  
+
 * [Student](#student)
     * [Student-Overview](#student-overview)
     * [Add classes](#add-class)
     * [Edit-Profile-Window](#edit-student-profile)
     * [Enroll-Class](#enroll-class)
-    
-      
+  
+  
 * [Instructor](#ins)
     * [Overview](#overview-ins)
     * [My Schedule](#schedule)
