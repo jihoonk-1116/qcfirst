@@ -1,4 +1,4 @@
-# Welcome to QCfirst
+﻿# Welcome to QCfirst
 
 The final programming project of CS355
 
@@ -33,10 +33,12 @@ By Asif Gani & Chihoon Kim
 ## Login Page 
 # <a name="login"></a>
 ![login](imgs/login.png)
+Log-in page decides that a user is a student or an instructor.
 
 ## Sign-up page
 # <a name="sign-up"></a>
 ![sign-up](imgs/signup.png)
+Users who want to sign-up are required their unique given number. 
 
 # Student side
 ### Overview page
@@ -47,7 +49,7 @@ On this page you are able to view the information about the student, view their 
 ### Edit Profile Mini Window
 # <a name="edit-student-profile"></a>
 ![edit-student-profile](imgs/Edit-Profile.png)
-This is a window that will be opened when the edit profile button is clicked, and here you can update the information aboutt the student. 
+This is a window that will be opened when the edit profile button is clicked, and here you can update the information about the student. 
 
 ### Add Class
 # <a name="add-class"></a>
@@ -57,33 +59,34 @@ Here students can search classes depending upon which college they go to, the se
 ### Enroll Class
 # <a name="enroll-class"></a>
 ![enroll-class](imgs/Enroll-Class.png)
-Here students can view all the classes that corresponds to the given search in the privious window By the clicking the 3 dots you are redirected to another link where you can add the class.
+Here students can view all the classes that corresponds to the given search in the previous window By the clicking the 3 dots you are redirected to another link where you can add the class.
 
 # Instructor side <a name="ins"></a>
-### Overview page
-# <a name="overview-ins"></a>
+### Overview page <a name="overview-ins"></a>
 ![overview](imgs/overview.png)
+This page gives overall information about a instructor's class.
 
-### My Schedule
-# <a name="schedule"></a>
+### My Schedule <a name="schedule"></a>
 ![schedule](imgs/schedule.png)
+Instructors enable to check his or her schedules visually on this page.
 
-### Roaster
-# <a name="roaster"></a>
+### Roaster <a name="roaster"></a>
 ![roaster](imgs/roster.png)
+Instructors can access students' information who register the instructor's class.
 
-### Student Details Mini-window
-# <a name="student-details-ins"></a>
+### Student Details Mini-window <a name="student-details-ins"></a>
+##### *All of these Mini-window designs are using 8-grid for desktop, tablet <br>and 4-grid for mobile.
 ![student-details](imgs/student-details.png)
+This mini-window is for checking a student details, and is connected with the roaster page. 
 
-### Class Details Mini-window
-# <a name="class-details-ins"></a>
+### Class Details Mini-window <a name="class-details-ins"></a>
 ![class-details](imgs/class-details.png)
+This mini-window is for checking a class details, and is part of the overview page.
 
-### Add a new class Mini-window
-# <a name="add-mini-ins"></a>
+### Add a new class Mini-window <a name="add-mini-ins"></a>
 ![add-mini](imgs/Add-mini.png)
+This mini-window is for adding a new class, and is part of the overview page.
 
-### Remove class Mini-window
-# <a name="remove-mini-ins"></a>
-![remove-mini](imgs/remove-mini.png)
+### Remove class Mini-window <a name="remove-mini-ins"></a>
+![remove-mini](imgs/remove-mini.png)<br>
+This mini-window is for confirming removing a class before deleting, and is part of the overview page.
