@@ -33,7 +33,7 @@ By Asif Gani & Chihoon Kim
 ## Login Page 
 # <a name="login"></a>
 ![login](imgs/login.png)
-Log-in page decides that a user is a student or an instructor.
+<a href="instructor\index.html" target="_blank">Log-in page</a> decides that a user is a student or an instructor.
 
 ## Sign-up page
 # <a name="sign-up"></a>
