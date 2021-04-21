@@ -4,8 +4,8 @@ The final programming project of CS355
 <a href="https://jihoonk-1116.github.io/finalProject/index.html" target="_blank"> [index page]</a>
 <br>(Both of the student and the instructor sides can be accessed from the index page, choosing the role.)
 
-<a href="https://github.com/ganiasif98/ganiasif98.github.io/tree/master/Final">Student side source code</a> - Asif Gani
-<a href="https://github.com/jihoonk-1116/jihoonk-1116.github.io/tree/master/finalProject">Instructor side source code</a> - Chihoon Kim<br>
+<a href="https://github.com/ganiasif98/ganiasif98.github.io/tree/master/Final">Student side source code</a> - Asif Gani<br>
+<a href="https://github.com/jihoonk-1116/jihoonk-1116.github.io/tree/master/finalProject">Instructor side source code</a> - Chihoon Kim
 
 
 # Visual Designs of QC first
