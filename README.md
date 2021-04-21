@@ -2,16 +2,14 @@
 
 The final programming project of CS355
 <a href="https://jihoonk-1116.github.io/finalProject/index.html" target="_blank"> [index page]</a>
-<br>(Both of the student and the instructor sides can be access from the index page, choosing the role.)
+<br>(Both of the student and the instructor sides can be accessed from the index page, choosing the role.)
 
-<a href="https://github.com/jihoonk-1116/jihoonk-1116.github.io/tree/master/finalProject">Instructor side source code</a> - Chihoon Kim<br>
-<a href="#">Student side source code</a> - Asif Gani
+<a href="https://github.com/ganiasif98/ganiasif98.github.io/tree/master/Final">Student side source code</a> - Asif Gani<br>
+<a href="https://github.com/jihoonk-1116/jihoonk-1116.github.io/tree/master/finalProject">Instructor side source code</a> - Chihoon Kim
 
-Contributors:<br>
-Chihoon Kim (https://github.com/jihoonk-1116)
-Asif Gani (https://github.com/ganiasif98)
 
 # Visual Designs of QC first
+* [CSS Deliverable](#d3)
 * [Site](#sitemap)
 * [Login Page](#login)
 * [Sign-up Page](#sign-up)
@@ -109,11 +107,16 @@ This mini-window is for adding a new class, and is part of the overview page.
 ![remove-mini](imgs/remove-mini.png)<br>
 This mini-window is for confirming removing a class before deleting, and is part of the overview page. 
 
-##CSS Deliverable
+## CSS Deliverable <a name="d3"></a>
 
-####Differences between wireframes and deliverable
+#### Differences between wireframes and deliverable
 
 Kim: When I drew the wireframes for this project, I felt that designing of website is not harder than my expectation because wireframing can be depicted as I thinking. When I writing HTML code, also, I felt that designing is not hard. The CSS deliverable, but, is totally different level. I spent a half-day aligning the index page's layout. After I decided that my CSS ability is not enough to implement, I used the Bootstrap framework. It is really powerful in terms of aligning content, designing the layout, and even responsiveness. Because of it, I can complete the CSS deliverable following my wireframes.  The biggest difference between the two is that designing a web page is impossible without understanding CSS, HTML, and several features such as display, box model, grid layout, selector, etc. Also,  implementation of responsiveness can be done with several techniques such as shrink font size, margin and padding, modifying the layout, and its design.
 
 Asif: Overall, when I drew up the wireframe for this project, I felt the design would be as hard as creating the wireframe and so the wireframe was only portraying what I was thinking at that moment. As I progressed into the design portion and I started doing CSS, the design portion felt not as overwhelming as the wireframe. We felt that including bootstrap into our HTML made the design much smoother and I was able to include small details in the html that made the design much easier to navigate. I was able to add the class details and the edit profile using bootstrap instead of having seperate html files for each. 
 
+
+
+#### Contributors:
+Chihoon Kim (https://github.com/jihoonk-1116)<br>
+Asif Gani (https://github.com/ganiasif98)
