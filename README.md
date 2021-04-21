@@ -12,7 +12,7 @@ Chihoon Kim (https://github.com/jihoonk-1116)<br>
 Asif Gani (https://github.com/ganiasif98)
 
 # Visual Designs of QC first
-* CSS Deliverable(#d3)
+* [CSS Deliverable](#d3)
 * [Site](#sitemap)
 * [Login Page](#login)
 * [Sign-up Page](#sign-up)
