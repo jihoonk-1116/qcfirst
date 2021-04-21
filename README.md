@@ -8,8 +8,8 @@ The final programming project of CS355
 <a href="#">Student side source code</a> - Asif Gani
 
 Contributors:<br>
-Chihoon Kim (https://github.com/jihoonk-1116)<br>
-Asif Gani ()
+Chihoon Kim (https://github.com/jihoonk-1116)
+Asif Gani (https://github.com/ganiasif98)
 
 # Visual Designs of QC first
 * [Site](#sitemap)
