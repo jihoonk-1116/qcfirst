@@ -1,7 +1,7 @@
 ﻿# Welcome to QCfirst
 
 The final programming project of CS355
-<a href="https://jihoonk-1116.github.io/final/index.html" target="_blank"> [index page]</a>
+<a href="https://jihoonk-1116.github.io/finalProject/index.html" target="_blank"> [index page]</a>
 <br>(Both of the student and the instructor sides can be access from the index page, choosing the role.)
 
 <a href="https://github.com/jihoonk-1116/jihoonk-1116.github.io/tree/master/finalProject">Instructor side source code</a> - Kim<br>
