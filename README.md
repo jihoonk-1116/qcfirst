@@ -110,7 +110,7 @@ This mini-window is for adding a new class, and is part of the overview page.
 ![remove-mini](imgs/remove-mini.png)<br>
 This mini-window is for confirming removing a class before deleting, and is part of the overview page. 
 
-## CSS Deliverable<a name="d3"></a>
+## CSS Deliverable <a name="d3"></a>
 
 #### Differences between wireframes and deliverable
 
