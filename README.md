@@ -4,8 +4,8 @@ The final programming project of CS355
 <a href="https://jihoonk-1116.github.io/finalProject/index.html" target="_blank"> [index page]</a>
 <br>(Both of the student and the instructor sides can be access from the index page, choosing the role.)
 
-<a href="https://github.com/jihoonk-1116/jihoonk-1116.github.io/tree/master/finalProject">Instructor side source code</a> - Kim<br>
-<a href="#">Student side source code</a> - Asif
+<a href="https://github.com/jihoonk-1116/jihoonk-1116.github.io/tree/master/finalProject">Instructor side source code</a> - Chihoon Kim<br>
+<a href="#">Student side source code</a> - Asif Gani
 
 Contributors:<br>
 Chihoon Kim (https://github.com/jihoonk-1116)<br>
