@@ -1,6 +1,11 @@
 ﻿# Welcome to QCfirst
 
 The final programming project of CS355
+<a href="https://jihoonk-1116.github.io/final/index.html" target="_blank"> [index page]</a>
+( Both of the student and the instructor sides can be access from the index page, choosing the role. )
+
+<a href="https://github.com/jihoonk-1116/jihoonk-1116.github.io/tree/master/finalProject">Instructor side source code</a>
+<a href="#">Student side source code</a>
 
 By Asif Gani & Chihoon Kim
 
@@ -33,7 +38,7 @@ By Asif Gani & Chihoon Kim
 ## Login Page 
 # <a name="login"></a>
 ![login](imgs/login.png)
-Log-in page decides that a user is a student or an instructor. <a href="instructor\index.html" target="_blank">[Code]</a><a href="https://jihoonk-1116.github.io/final/home.html" target="_blank"> [Page]</a>
+Log-in page decides that a user is a student or an instructor. <a href="instructor\index.html" target="_blank">[Code]</a><a href="https://jihoonk-1116.github.io/final/index.html" target="_blank"> [Page]</a>
 
 ## Sign-up page
 # <a name="sign-up"></a>
@@ -75,29 +80,42 @@ Here students can view all the classes that corresponds to the given search in t
 # Instructor side <a name="ins"></a>
 ### Overview page <a name="overview-ins"></a>
 ![overview](imgs/overview.png)
-This page gives overall information about a instructor's class. <a href="instructor\inst_overview.html" target="_blank">[Code]</a><a href="https://jihoonk-1116.github.io/final/inst_overview.html" target="_blank"> [Page]</a>
+This page gives overall information about a instructor's class. 
 
 ### My Schedule <a name="schedule"></a>
 ![schedule](imgs/schedule.png)
-Instructors enable to check his or her schedules visually on this page. <a href="instructor\inst_schedule.html" target="_blank">[Code]</a><a href="https://jihoonk-1116.github.io/final/inst_schedule.html" target="_blank"> [Page]</a>
+Instructors enable to check his or her schedules visually on this page.
 
 ### Roster <a name="roaster"></a>
 ![roaster](imgs/roster.png)
-Instructors can access students' information who register the instructor's class. <a href="instructor\roster.html" target="_blank">[Code]</a><a href="https://jihoonk-1116.github.io/final/roster.html" target="_blank"> [Page]</a>
+Instructors can access students' information who register the instructor's class. 
 
 ### Student Details Mini-window <a name="student-details-ins"></a>
 ##### *All of these Mini-window designs are using 8-grid for desktop, tablet <br>and 4-grid for mobile.
 ![student-details](imgs/student-details.png)
-This mini-window is for checking a student details, and is connected with the roaster page. <a href="instructor\stu_details.html" target="_blank">[Code]</a><a href="https://jihoonk-1116.github.io/final/stu_details.html" target="_blank"> [Page]</a>
+This mini-window is for checking a student details, and is connected with the roaster page.
 
 ### Class Details Mini-window <a name="class-details-ins"></a>
 ![class-details](imgs/class-details.png)
-This mini-window is for checking a class details, and is part of the overview page. <a href="instructor\class_details.html" target="_blank">[Code]</a><a href="https://jihoonk-1116.github.io/final/class_details.html" target="_blank"> [Page]</a>
+This mini-window is for checking a class details, and is part of the overview page. 
 
 ### Add a new class Mini-window <a name="add-mini-ins"></a>
 ![add-mini](imgs/Add-mini.png)
-This mini-window is for adding a new class, and is part of the overview page. <a href="instructor\add_class.html" target="_blank">[Code]</a><a href="https://jihoonk-1116.github.io/final/add_class.html" target="_blank"> [Page]</a>
+This mini-window is for adding a new class, and is part of the overview page.
 
 ### Remove class Mini-window <a name="remove-mini-ins"></a>
 ![remove-mini](imgs/remove-mini.png)<br>
-This mini-window is for confirming removing a class before deleting, and is part of the overview page. <a href="instructor\remove_class.html" target="_blank">[Code]</a><a href="https://jihoonk-1116.github.io/final/remove_class.html" target="_blank"> [Page]</a>
+This mini-window is for confirming removing a class before deleting, and is part of the overview page. 
+
+##CSS Deliverable
+
+####Differences between wireframes and deliverable
+
+Kim: When I drew the wireframes for this project, I felt that designing of website is not harder than my expectation because wireframing can be depicted as I thinking. When I writing HTML code, also, I felt that designing is not hard. The CSS deliverable, but, is totally different level. I spent a half-day aligning the index page's layout. After I decided that my CSS ability is not enough to implement, I used the Bootstrap framework. It is really powerful in terms of aligning content, designing the layout, and even responsiveness. Because of it, I can complete the CSS deliverable following my wireframes.  The biggest difference between the two is that designing a web page is impossible without understanding CSS, HTML, and several features such as display, box model, grid layout, selector, etc. Also,  implementation of responsiveness can be done with several techniques such as shrink font size, margin and padding, modifying the layout, and its design.
+
+Asif:
+
+####Contributors:
+Chihoon Kim (https://github.com/jihoonk-1116)
+
+Asif Gani ()
