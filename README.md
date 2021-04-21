@@ -2,12 +2,14 @@
 
 The final programming project of CS355
 <a href="https://jihoonk-1116.github.io/final/index.html" target="_blank"> [index page]</a>
-( Both of the student and the instructor sides can be access from the index page, choosing the role. )
+<br>(Both of the student and the instructor sides can be access from the index page, choosing the role.)
 
-<a href="https://github.com/jihoonk-1116/jihoonk-1116.github.io/tree/master/finalProject">Instructor side source code</a>
-<a href="#">Student side source code</a>
+<a href="https://github.com/jihoonk-1116/jihoonk-1116.github.io/tree/master/finalProject">Instructor side source code</a> - Kim<br>
+<a href="#">Student side source code</a> - Asif
 
-By Asif Gani & Chihoon Kim
+Contributors:<br>
+Chihoon Kim (https://github.com/jihoonk-1116)<br>
+Asif Gani ()
 
 # Visual Designs of QC first
 * [Site](#sitemap)
@@ -115,7 +117,3 @@ Kim: When I drew the wireframes for this project, I felt that designing of websi
 
 Asif:
 
-####Contributors:
-Chihoon Kim (https://github.com/jihoonk-1116)
-
-Asif Gani ()
