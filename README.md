@@ -12,6 +12,7 @@ Chihoon Kim (https://github.com/jihoonk-1116)<br>
 Asif Gani (https://github.com/ganiasif98)
 
 # Visual Designs of QC first
+* CSS Deliverable(#css)
 * [Site](#sitemap)
 * [Login Page](#login)
 * [Sign-up Page](#sign-up)
@@ -109,7 +110,7 @@ This mini-window is for adding a new class, and is part of the overview page.
 ![remove-mini](imgs/remove-mini.png)<br>
 This mini-window is for confirming removing a class before deleting, and is part of the overview page. 
 
-## CSS Deliverable
+## CSS Deliverable<a name="css"></a>
 
 #### Differences between wireframes and deliverable
 
