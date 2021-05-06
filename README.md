@@ -1,7 +1,7 @@
 ﻿# Welcome to QCfirst
 
 The final programming project of CS355
-<a href="https://jihoonk-1116.github.io/finalProject/index.html" target="_blank"> [index page]</a>
+<a href="https://qcfirst-1.jihoonk1116.repl.co/index.html"> [liva app] host by Repl.it</a>
 <br>(Both of the student and the instructor sides can be accessed from the index page, choosing the role.)
 
 <a href="https://github.com/ganiasif98/ganiasif98.github.io/tree/master/Final">Student side source code</a> - Asif Gani<br>
@@ -115,7 +115,27 @@ Kim: When I drew the wireframes for this project, I felt that designing of websi
 
 Asif: Overall, when I drew up the wireframe for this project, I felt the design would be as hard as creating the wireframe and so the wireframe was only portraying what I was thinking at that moment. As I progressed into the design portion and I started doing CSS, the design portion felt not as overwhelming as the wireframe. We felt that including bootstrap into our HTML made the design much smoother and I was able to include small details in the html that made the design much easier to navigate. I was able to add the class details and the edit profile using bootstrap instead of having seperate html files for each. 
 
+## User management Deliverable <a name="d3"></a>
 
+This app is used Nodejs and Express for the backend server, and mongoDB for database. User management required us to implement a few of APIs, such as creating new user data, checking the user authentication, updating the user profile on the profile section. 
+1. Log-in & sign-up and authentication system
+  For the system, we need to implement user APIs to handle user data with our DB. First, the model for user schema is needed to store in MongoDB. The schema is composed of like the figure: ![image](https://user-images.githubusercontent.com/76544061/117223641-14e69c00-addc-11eb-8317-5c52e41a82d0.png)
+ The code and email fields are unique so that a user has one unique code and eamil. Then, /signup API is implemented to save user information. We used 'bicypto' to encrypt password and 'mongoose' to interact with our database. The logic stream for the API like this: 
+ Parse request -> encrypt password using bcypt -> code check using mongoose method(findOne()) -> if the code is valid -> Create user and save -> if the user's code and email is not duplicate value -> Server response to the frontend with JSON data. ![image](https://user-images.githubusercontent.com/76544061/117224785-cb4b8080-adde-11eb-9f8f-6720e0f7e66d.png)
+
+Next API is /login API. It supports a user who wants log in the website with his email and password. The request for the API begins with user's role, email and password. Then, The API checks the user is registered using findOne() method. If the user was registered before signing in, a JSON Web Token is being issued for the user with the secret key what we made. Then, the token data is being returned, and the frontend parse the response using .json() method. If the token is not error, the token is being stored it in localStorage.
+![image](https://user-images.githubusercontent.com/76544061/117225836-49108b80-ade1-11eb-8884-0354714d652c.png)
+
+Third API is /getuserinfo API. This API is to update overview's profile section and to manipulate DOM contents dynamically depending on the user who successes log in. For acquiring the user data, the token that is created before must be handed over to the backend and be attached requested header. ![image](https://user-images.githubusercontent.com/76544061/117226266-406c8500-ade2-11eb-97d2-5b33731c602f.png) 
+Then the server can check and use the token to validate the user and get user data from database. At this part, JWT decode() method is used with server secret key that we initialized before. If the token is valid(the user is a registered user), then the user information is being returned as JSON data. If the response is successfully transferred to the frontend, then it manipulates HTML contents using selecting class and id.     
+![image](https://user-images.githubusercontent.com/76544061/117227055-fb495280-ade3-11eb-8591-832d51e02f68.png)
+
+2. Our Feedback
+
+Chihoon:
+
+Asif:
+ 
 
 #### Contributors:
 Chihoon Kim (https://github.com/jihoonk-1116)<br>
