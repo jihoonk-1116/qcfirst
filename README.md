@@ -127,7 +127,7 @@ This app is used Nodejs and Express for the backend server, and mongoDB for data
  
  
  #### Log-in & sign-up and authentication system
-  For the system, we needed to implement user APIs to handle user data with our DB. First, the model for user schema is needed to store in MongoDB. The schema is composed of like the below figure: <br>
+For the system, we needed to implement user APIs to handle user data with our DB. First, the model for user schema is needed to store in MongoDB. The schema is the below figure: <br>
   
   ![image](https://user-images.githubusercontent.com/76544061/117223641-14e69c00-addc-11eb-8317-5c52e41a82d0.png)
   
