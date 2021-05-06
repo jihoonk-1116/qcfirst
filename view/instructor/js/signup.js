@@ -1,7 +1,7 @@
 const checkerror = false;
 window.addEventListener("DOMContentLoaded", function(){
     document.getElementById("signin").addEventListener("click", function(event) {
-        //checkForm();
+        checkForm();
         if(checkerror){
             console.log("Invalid sign form");
         }else{
