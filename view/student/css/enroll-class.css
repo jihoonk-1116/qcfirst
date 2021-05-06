@@ -1,0 +1,12 @@
+body{
+    background-image: url("../img/annie-spratt-unsplash.jpg");
+    font-family: 'Montserrat', sans-serif;
+}
+
+.results p {
+    background-color: #818182;
+}
+
+.h4 {
+    background-color: #EF8354;
+}

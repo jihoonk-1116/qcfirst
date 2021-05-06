@@ -2,10 +2,11 @@
 
 The final programming project of CS355
 <a href="https://qcfirst-1.jihoonk1116.repl.co/index.html"> [liva app]</a> host by Repl.it
-<br>(Both of the student and the instructor sides can be accessed from the index page, choosing the role.)
+<br>(Use one of these codes to sign up: 1213 1211 1212 1210 1234 1203 1215)
 
-<a href="https://github.com/ganiasif98/ganiasif98.github.io/tree/master/Final">Student side source code</a> - Asif Gani<br>
-<a href="https://github.com/jihoonk-1116/jihoonk-1116.github.io/tree/master/finalProject">Instructor side source code</a> - Chihoon Kim
+<a href="https://github.com/jihoonk-1116/qcfirst/tree/main/apps">Server side source code</a> - Chihoon Kim & Asif Gani <br>
+<a href="https://github.com/jihoonk-1116/qcfirst/tree/main/view/student">Student side source code</a> - Asif Gani<br>
+<a href="https://github.com/jihoonk-1116/qcfirst/tree/main/view/instructor">Instructor view source code</a> - Chihoon Kim
 
 
 # Visual Designs of QC first
@@ -34,41 +35,41 @@ The final programming project of CS355
    
 ## Site Map 
 # <a name="sitemap"></a>
-![sitemap](imgs/sitemap.png)
+![sitemap](visual_design/imgs/sitemap.png)
 
 ## Login Page 
 # <a name="login"></a>
-![login](imgs/login.png)
+![login](visual_design/imgs/login.png)
 Log-in page decides that a user is a student or an instructor. <a href="instructor\index.html" target="_blank">[Code]</a><a href="https://jihoonk-1116.github.io/final/index.html" target="_blank"> [Page]</a>
 
 ## Sign-up page
 # <a name="sign-up"></a>
-![sign-up](imgs/signup.png)
+![sign-up](visual_design/imgs/signup.png)
 Users who want to sign-up are required their unique given number. <a href="instructor\signup.html" target="_blank">[Code]</a><a href="https://jihoonk-1116.github.io/final/signup.html" target="_blank"> [Page]</a>
 
 # Student side
 
 ### Overview page
 # <a name="student"></a>
-![student-overview](imgs/Student-Overview.png)
+![student-overview](visual_design/imgs/Student-Overview.png)
 On this page you are able to view the information about the student, view their schedule for that semester, and a link to add classes. 
 <a href="Student\student_overview.html" target="_blank">[Code]</a><a href="https://ganiasif98.github.io/Final/student_overview.html" target="_blank"> [Page]</a>
 
 ### Edit Profile Mini Window
 # <a name="edit-student-profile"></a>
-![edit-student-profile](imgs/Edit-Profile.png)
+![edit-student-profile](visual_design/imgs/Edit-Profile.png)
 This is a window that will be opened when the edit profile button is clicked, and here you can update the information about the student.
 <a href="Student\edit_profile.html" target="_blank">[Code]</a><a href="https://ganiasif98.github.io/Final/edit_profile.html" target="_blank"> [Page]</a>
 
 ### Add Class
 # <a name="add-class"></a>
-![add-class](imgs/Add-Class.png)
+![add-class](visual_design/imgs/Add-Class.png)
 Here students can search classes depending upon which college they go to, the semester they want to search classes from, as well as the course #, or name. Also have the option to modify the search or clear the search.
 <a href="Student\search_class.html" target="_blank">[Code]</a><a href="https://ganiasif98.github.io/Final/search_class.html" target="_blank"> [Page]</a>
 
 ### Enroll Class
 # <a name="enroll-class"></a>
-![enroll-class](imgs/Enroll-Class.png)
+![enroll-class](visual_design/imgs/Enroll-Class.png)
 Here students can view all the classes that corresponds to the given search in the previous window By the clicking the 3 dots you are redirected to another link where you can add the class.
 <a href="Student\enroll_class.html" target="_blank">[Code]</a><a href="https://ganiasif98.github.io/Final/enroll_class.html" target="_blank"> [Page]</a>
 
@@ -80,32 +81,32 @@ Here students can view all the classes that corresponds to the given search in t
 
 # Instructor side <a name="ins"></a>
 ### Overview page <a name="overview-ins"></a>
-![overview](imgs/overview.png)
+![overview](visual_design/imgs/overview.png)
 This page gives overall information about a instructor's class. 
 
 ### My Schedule <a name="schedule"></a>
-![schedule](imgs/schedule.png)
+![schedule](visual_design/imgs/schedule.png)
 Instructors enable to check his or her schedules visually on this page.
 
 ### Roster <a name="roaster"></a>
-![roaster](imgs/roster.png)
+![roaster](visual_design/imgs/roster.png)
 Instructors can access students' information who register the instructor's class. 
 
 ### Student Details Mini-window <a name="student-details-ins"></a>
 ##### *All of these Mini-window designs are using 8-grid for desktop, tablet <br>and 4-grid for mobile.
-![student-details](imgs/student-details.png)
+![student-details](visual_design/imgs/student-details.png)
 This mini-window is for checking a student details, and is connected with the roaster page.
 
 ### Class Details Mini-window <a name="class-details-ins"></a>
-![class-details](imgs/class-details.png)
+![class-details](visual_design/imgs/class-details.png)
 This mini-window is for checking a class details, and is part of the overview page. 
 
 ### Add a new class Mini-window <a name="add-mini-ins"></a>
-![add-mini](imgs/Add-mini.png)
+![add-mini](visual_design/imgs/Add-mini.png)
 This mini-window is for adding a new class, and is part of the overview page.
 
 ### Remove class Mini-window <a name="remove-mini-ins"></a>
-![remove-mini](imgs/remove-mini.png)<br>
+![remove-mini](visual_design/imgs/remove-mini.png)<br>
 This mini-window is for confirming removing a class before deleting, and is part of the overview page. 
 
 ## CSS Deliverable <a name="d3"></a>
@@ -122,6 +123,7 @@ This app is used Nodejs and Express for the backend server, and mongoDB for data
 
  #### Front-end user validation
  
+ For the user validation, the email field checks to see if the email entered is a qc email. The email is valid if it follows the pattern "Hello.World55@qc.cuny.edu". If any other email is entered the form will not be submiited and an error message is displayed. For the name field the user must enter a first and last name. If only the first name is entered then an error message is shown to enter full name. The name field should be entered as "Example Name". For the password field it checks to make sure that the password as one capital letter followed by lower case letters followed by a number followed by a special character. If the password field is not entered correctly an error message is displayed saying the password must have all required information. A password example would be "Example21." The confirm password field checks to password entered in the previous field and if the password matches the confirm password entered a message is displayed that states that the password is a match.
  
  
  #### Log-in & sign-up and authentication system
@@ -152,10 +154,9 @@ Then the server can check and use the token to validate the user and get user da
 
 #### Our Feedback
 
-Chihoon:
+Chihoon: When I was implementing the login and sign up authentication system, I was able use Nodejs and Express for the backend server, and mongoDB for database. I found that it was easier to use mongoDB for our database because we didn't have to create tables to store our data and also because mongoDB supports several methods of backend programming that saved us alot of time and space. Deliverable 4 required much more debugging than previous deilverables but I feel we created a sucessful user management backend that will help us through the remaining deliverables.
 
-Asif:
- 
+Asif: overall, deliverable 4 was by far the most diffcult. Getting the student-overview page to match the information that was entered in the sign up page took me the longest to do. I was able to sucessfully implement the user validation section using regex expressions for the email, name and password. I was able to get a better understanding of using JSON and Ajax to implement the student-overview js file. Overall, I have learned alot from this deliverable that will help when its time to implement a fully functional QCfirst website.
 
 #### Contributors:
 Chihoon Kim (https://github.com/jihoonk-1116)<br>

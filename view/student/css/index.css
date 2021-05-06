@@ -1,0 +1,49 @@
+body {
+    background-image: url("../img/unsplash-l.jpg");
+    font-family: 'Montserrat', sans-serif;
+}
+
+form {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin: 30px;
+    padding: 10px;
+    background-color: white;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+img {
+    margin-top: 100px;
+}
+
+.form-check {
+    padding: 5px 25px;
+}
+
+.form-floating {
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 991px) { /* tablet */
+
+    body {
+        background-image: url("../img/unsplash-m.jpg");
+    }
+
+    form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    body {
+        background-image: url("../img/unsplash-sm.jpg");
+    }
+
+    img {
+        margin-top: 20px;
+    }
+}
