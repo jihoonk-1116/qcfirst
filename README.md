@@ -4,8 +4,9 @@ The final programming project of CS355
 <a href="https://qcfirst-1.jihoonk1116.repl.co/index.html"> [liva app]</a> host by Repl.it
 <br>(Use one of these codes to sign up: 1213 1211 1212 1210 1234 1203 1215)
 
-<a href="https://github.com/ganiasif98/ganiasif98.github.io/tree/master/Final">Student side source code</a> - Asif Gani<br>
-<a href="https://github.com/jihoonk-1116/jihoonk-1116.github.io/tree/master/finalProject">Instructor side source code</a> - Chihoon Kim
+<a href="https://github.com/jihoonk-1116/qcfirst/tree/main/apps">Server side source code</a> - Asif Gani & Chihoon Kim<br>
+<a href="https://github.com/jihoonk-1116/qcfirst/tree/main/view/student">Student side source code</a> - Asif Gani<br>
+<a href="https://github.com/jihoonk-1116/qcfirst/tree/main/view/instructor">Instructor view source code</a> - Chihoon Kim
 
 
 # Visual Designs of QC first
