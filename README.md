@@ -123,6 +123,7 @@ This app is used Nodejs and Express for the backend server, and mongoDB for data
 
  #### Front-end user validation
  
+ For the user validation, the email field checks to see if the email entered is a qc email. The email is valid if it follows the pattern "Hello.World55@qc.cuny.edu". If any other email is entered the form will not be submiited and an error message is displayed. For the name field the user must enter a first and last name. If only the first name is entered then an error message is shown to enter full name. The name field should be entered as "Example Name". For the password field it checks to make sure that the password as one capital letter followed by lower case letters followed by a number followed by a special character. If the password field is not entered correctly an error message is displayed saying the password must have all required information. A password example would be "Example21." The confirm password field checks to password entered in the previous field and if the password matches the confirm password entered a message is displayed that states that the password is a match.
  
  
  #### Log-in & sign-up and authentication system
@@ -153,10 +154,9 @@ Then the server can check and use the token to validate the user and get user da
 
 #### Our Feedback
 
-Chihoon:
+Chihoon: When I was implementing the login and sign up authentication system, I was able use Nodejs and Express for the backend server, and mongoDB for database. I found that it was easier to use mongoDB for our database because we didn't have to create tables to store our data and also because mongoDB supports several methods of backend programming that saved us alot of time and space. Deliverable 4 required much more debugging than previous deilverables but I feel we created a sucessful user management backend that will help us through the remaining deliverables.
 
-Asif:
- 
+Asif: overall, deliverable 4 was by far the most diffcult. Getting the student-overview page to match the information that was entered in the sign up page took me the longest to do. I was able to sucessfully implement the user validation section using regex expressions for the email, name and password. I was able to get a better understanding of using JSON and Ajax to implement the student-overview js file. Overall, I have learned alot from this deliverable that will help when its time to implement a fully functional QCfirst website.
 
 #### Contributors:
 Chihoon Kim (https://github.com/jihoonk-1116)<br>
