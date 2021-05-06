@@ -1,7 +1,7 @@
 ﻿# Welcome to QCfirst
 
 The final programming project of CS355
-<a href="https://qcfirst-1.jihoonk1116.repl.co/index.html"> [liva app] host by Repl.it</a>
+<a href="https://qcfirst-1.jihoonk1116.repl.co/index.html"> [liva app]</a> host by Repl.it
 <br>(Both of the student and the instructor sides can be accessed from the index page, choosing the role.)
 
 <a href="https://github.com/ganiasif98/ganiasif98.github.io/tree/master/Final">Student side source code</a> - Asif Gani<br>
