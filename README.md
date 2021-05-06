@@ -132,7 +132,7 @@ For the system, we needed to implement user APIs to handle user data with our DB
   ![image](https://user-images.githubusercontent.com/76544061/117223641-14e69c00-addc-11eb-8317-5c52e41a82d0.png)
   
   
- The code and email fields are unique so that a user has one unique code and eamil. Then, '/signup' API is implemented to save user information. We used 'bicypto' to encrypt password and 'mongoose' to interact with our database. The logic stream for the API like this: 
+ The code and email fields are unique so that a user has one unique code and email. Then, '/signup' API is implemented to save user information. We used 'bicypto' to encrypt password and 'mongoose' to interact with our database. The logic stream for the API like this: 
  Parse request -> encrypt password using bcypt -> code check using mongoose method(findOne()) -> if the code is valid -> Create user and save -> if the user's code and email is not duplicate value -> Server response to the frontend with JSON data. <br>
  
  ![image](https://user-images.githubusercontent.com/76544061/117224785-cb4b8080-adde-11eb-9f8f-6720e0f7e66d.png)
