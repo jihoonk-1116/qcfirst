@@ -34,16 +34,16 @@ function deleteClass(code){
         url:"../../inst/removeclass",
         type:"POST",
         headers :{"X-Auth" : token},
-        data:{'code':code}
+        data:{'code':code},
+        error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+           }
     })
     .done(function(data){
         alert("Class is deleted: " + data.subject);
         window.location = '/instructor/html/overview.html';
-    })
-    .fail(error=>{
-        console.log(error);
-    })
-    
+    }) 
 }
 function updateProfile() {
     if(!token){
@@ -53,7 +53,11 @@ function updateProfile() {
     $.ajax({
         url:"../../user/getuserinfo",
         type:"GET",
-        headers :{"X-Auth" : token}
+        headers :{"X-Auth" : token},
+        error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+           }
     })
     .done(function(data){
         if(data.role !== "instructor"){
@@ -77,7 +81,11 @@ function updateCourse(){
     $.ajax({
         url:"../../inst/updatecourse",
         type:"GET",
-        headers :{"X-Auth" : token}
+        headers :{"X-Auth" : token},
+        error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+           }
     })
     .done(function(data){
         let index=0;
@@ -98,7 +106,11 @@ function saveNewClass(newcourse){
         url:"../../inst/newclass",
         type:"POST",
         headers :{"X-Auth" : token},
-        data: newcourse
+        data: newcourse,
+        error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+          }
     })
     .done(function(data){
         if(data.status === 'error'){
@@ -155,7 +167,11 @@ function editprofile(){
     $.ajax({
         url:"../../inst/editprofile",
         type:"GET",
-        headers :{"X-Auth" : token}
+        headers :{"X-Auth" : token},
+        error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+           }
     })
     .done(function(data){
         $("#userid").attr("placeholder", data.name);
