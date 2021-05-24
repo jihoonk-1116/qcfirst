@@ -12,35 +12,39 @@ The final programming project of CS355
 Chihoon Kim (https://github.com/jihoonk-1116)<br>
 Asif Gani (https://github.com/ganiasif98)
 
-#List of Features
+# List of Features
 
-##Student Side Features
+## Student Side Features
+* Click the links after log in as student.
 * Students are able to edit profile information.<a href ="https://qcfirst-1.jihoonk1116.repl.co/student/html/stu_overview.html">[Edit Profile]</a>
 * Students can search and enroll classes.<a href ="https://qcfirst-1.jihoonk1116.repl.co/student/html/search_class.html">[Search and Enroll Class]</a>
 * Students are able to drop or view classes. Classes must be added in order for a student to drop or view the class.<a href ="https://qcfirst-1.jihoonk1116.repl.co/student/html/enroll_class.html">[Drop or View Class]</a>
 * Students can view their schedule in the schedule section under the student overview page that is automatically generated once you add a class.<a href ="https://qcfirst-1.jihoonk1116.repl.co/student/html/stu_overview.html">[View Schedule]</a>
 
 ## Instructor Side Features
+* Click the links after log in as student.
 * Instructors are able to add new classes that students can register for by clicking the "register new class" button in the instructor overview page.<a href="https://qcfirst-1.jihoonk1116.repl.co/instructor/html/overview.html">[Register New Class]</a>
 * Instructors are able to view students who register for their class in the roster page.<a href="https://qcfirst-1.jihoonk1116.repl.co/instructor/html/roster.html">[View Roster]</a>
 * Instructors can view their schedule in an auto generated schedule maker.<a href="https://qcfirst-1.jihoonk1116.repl.co/instructor/html/schedule.html">[View Schedule]</a>
 
 # Deliverables
+* [Search Deliverable](#d4)
+* [Course management Deliverable](#d4)
 * [User management Deliverable](#d4)
 * [CSS Deliverable](#d3)
 * [Final Demo](#d5)
 
-#Frontend/Client-Side Technologies
+# Frontend/Client-Side Technologies
 In our final demo the choice of frontend we decided on was incorporating bootstrap into our html and CSS for styling. 
 We also incorporated CSS into our webpage to have that professional feel. We also included jquery into our final demo mainly to 
 make an AJAX request to the backend server. 
 
-#Backend/Server-Side Technologies 
+# Backend/Server-Side Technologies 
 In our final demo, the backend that we mainly used was nodejs, express framework and mongoDB.
 We used express because it is one of nodejs framework that made it really simple to configure a server. 
 
 
-#Choice of Database
+# Choice of Database
 For our database choice we went with monogDB. We used MongoDB because 
 it was a mongoose framework that offered several convenient methods 
 that made it easy to communicate the backend with the database. MongoDB 
