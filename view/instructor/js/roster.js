@@ -12,7 +12,11 @@ function updateClass(){
     $.ajax({
         url:"../../inst/updatecourse",
         type:"GET",
-        headers :{"X-Auth" : token}
+        headers :{"X-Auth" : token},
+        error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+           }
     })
     .done(function(data){
         let index=0;
@@ -29,7 +33,11 @@ function getRoster(code,table_index){ //this index points table id
     $.ajax({
       url:"../../inst/getroster",
       type:"POST",
-      data:{'code':code}
+      data:{'code':code},
+      error:function(res){
+              let err = res.responseJSON
+              alert(err.error);
+          }
     })
     .done(function(data){
       
