@@ -196,8 +196,8 @@ Then the server can check and use the token to validate the user and get user da
 
 Chihoon: When I was implementing the login and sign up authentication system, 
 I was able to use Nodejs and Express for the backend server, and mongoDB for database. 
-I found that it was easier to use mongoDB for our database because we didn't have to create tables to store our data and also because mongoDB supports several methods of backend programming that saved us a lot of time and space. 
-Deliverable 4 required much more debugging than previous deliverables, but I feel we created a successful user management backend that will help us through the remaining deliverables.
+I found that it was easier to use mongoDB for our database than RDBMS because we don't have to create tables to store our data and also mongoose supports several methods of backend programming that saves a lot of time to build database. 
+
 
 Asif: overall, deliverable 4 was by far the most difficult. 
 Getting the student-overview page to match the information that was entered in the sign-up page took me the longest to do. 
