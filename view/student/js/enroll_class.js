@@ -14,7 +14,11 @@ function getMyClass(){
     $.ajax({
         url:"../../stu/getmyclass",
         type:"GET",
-        headers:{"X-Auth" : token}
+        headers:{"X-Auth" : token},
+        error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+           }
     })
     .done(function(data){
         let index=0;
@@ -41,7 +45,10 @@ function dropClass(code){
         type:"POST",
         headers :{"X-Auth" : token},
         data:{'code':code},
-    
+        error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+           }
     })
     .done(function(data){
         alert(data.subject +" class is droped");
