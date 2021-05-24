@@ -51,6 +51,10 @@ function searchClass(){
             headers :{"X-Auth" : token},
             data:{
                 'code':code
+            },
+            error:function(res){
+                let err = res.responseJSON
+                alert(err.error);
             }
         })
          //success
@@ -73,6 +77,10 @@ function searchClass(){
             data:{
                 'semester':term,
                 'department':dept,
+            },
+             error:function(res){
+                let err = res.responseJSON
+                alert(err.error);
             }
         })
         .done(function(data){
