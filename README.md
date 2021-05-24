@@ -1,7 +1,7 @@
 ﻿# Welcome to QCfirst
 
 The final programming project of CS355
-<a href="https://qcfirst-1.jihoonk1116.repl.co/index.html"> [liva app]</a> host by Repl.it
+<a href="https://qcfirst-2.jihoonk1116.repl.co"> [liva app]</a> host by Repl.it
 
 
 <a href="https://github.com/jihoonk-1116/qcfirst/tree/main/apps">Server side source code</a> - Chihoon Kim & Asif Gani <br>
