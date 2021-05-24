@@ -28,7 +28,11 @@ function updateProfile() {
     $.ajax({
         url:"../../user/getuserinfo",
         type:"GET",
-        headers :{"X-Auth" : token}
+        headers :{"X-Auth" : token},
+        error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+           }
     })
     .done(function(data){
         if(data.role !== "student"){
@@ -75,7 +79,11 @@ function saveprofile(){
             'phone': phone,
             'prof': prof,
             'intro': intro
-        }
+        },
+        error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+           }
     })
     .done(function(data){
         window.location = '/student/html/stu_overview.html';
@@ -91,7 +99,11 @@ function editprofile(){
     $.ajax({
         url:"../../stu/editprofile",
         type:"GET",
-        headers :{"X-Auth" : token}
+        headers :{"X-Auth" : token},
+        error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+           }
     })
     .done(function(data){
         $("#userid").attr("placeholder", data.name);
@@ -108,7 +120,11 @@ function updateSchedule(){
     $.ajax({
         url:"../../stu/getmyclass",
         type:"GET",
-        headers :{"X-Auth" : token}
+        headers :{"X-Auth" : token},
+        error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+           }
     })
     .done(function(data){
         let index=0;
