@@ -26,7 +26,11 @@ function searchByKeyword(event, key){
         $.ajax({
             url:"../../search/" + key,
             type:"GET",
-            headers :{"X-Auth" : token}
+            headers :{"X-Auth" : token},
+            error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+           }
         })
         .done(function(data){
             if(data.length == 0){
