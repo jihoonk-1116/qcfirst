@@ -8,10 +8,46 @@ The final programming project of CS355
 <a href="https://github.com/jihoonk-1116/qcfirst/tree/main/view/student">Student side source code</a> - Asif Gani<br>
 <a href="https://github.com/jihoonk-1116/qcfirst/tree/main/view/instructor">Instructor view source code</a> - Chihoon Kim
 
+#### Contributors:
+Chihoon Kim (https://github.com/jihoonk-1116)<br>
+Asif Gani (https://github.com/ganiasif98)
 
-# Visual Designs of QC first
+#List of Features
+
+##Student Side Features
+* Students are able to edit profile information.<a href ="https://qcfirst-1.jihoonk1116.repl.co/student/html/stu_overview.html">[Edit Profile]</a>
+* Students can search and enroll classes.<a href ="https://qcfirst-1.jihoonk1116.repl.co/student/html/search_class.html">[Search and Enroll Class]</a>
+* Students are able to drop or view classes. Classes must be added in order for a student to drop or view the class.<a href ="https://qcfirst-1.jihoonk1116.repl.co/student/html/enroll_class.html">[Drop or View Class]</a>
+* Students can view their schedule in the schedule section under the student overview page that is automatically generated once you add a class.<a href ="https://qcfirst-1.jihoonk1116.repl.co/student/html/stu_overview.html">[View Schedule]</a>
+
+## Instructor Side Features
+* Instructors are able to add new classes that students can register for by clicking the "register new class" button in the instructor overview page.<a href="https://qcfirst-1.jihoonk1116.repl.co/instructor/html/overview.html">[Register New Class]</a>
+* Instructors are able to view students who register for their class in the roster page.<a href="https://qcfirst-1.jihoonk1116.repl.co/instructor/html/roster.html">[View Roster]</a>
+* Instructors can view their schedule in an auto generated schedule maker.<a href="https://qcfirst-1.jihoonk1116.repl.co/instructor/html/schedule.html">[View Schedule]</a>
+
+# Deliverables
 * [User management Deliverable](#d4)
 * [CSS Deliverable](#d3)
+* [Final Demo](#d5)
+
+#Frontend/Client-Side Technologies
+In our final demo the choice of frontend we decided on was incorporating bootstrap into our html and CSS for styling. 
+We also incorporated CSS into our webpage to have that professional feel. We also included jquery into our final demo mainly to 
+make an AJAX request to the backend server. 
+
+#Backend/Server-Side Technologies 
+In our final demo, the backend that we mainly used was nodejs, express framework and mongoDB.
+We used express because it is one of nodejs framework that made it really simple to configure a server. 
+
+
+#Choice of Database
+For our database choice we went with monogDB. We used MongoDB because 
+it was a mongoose framework that offered several convenient methods 
+that made it easy to communicate the backend with the database. MongoDB 
+made it easy to find data or data sets using a single method either, find(key) or 
+findOne(key).
+
+# Visual Designs of QC first
 * [Site](#sitemap)
 * [Login Page](#login)
 * [Sign-up Page](#sign-up)
@@ -154,10 +190,25 @@ Then the server can check and use the token to validate the user and get user da
 
 #### Our Feedback
 
-Chihoon: When I was implementing the login and sign up authentication system, I was able use Nodejs and Express for the backend server, and mongoDB for database. I found that it was easier to use mongoDB for our database because we didn't have to create tables to store our data and also because mongoDB supports several methods of backend programming that saved us alot of time and space. Deliverable 4 required much more debugging than previous deilverables but I feel we created a sucessful user management backend that will help us through the remaining deliverables.
+Chihoon: When I was implementing the login and sign up authentication system, 
+I was able to use Nodejs and Express for the backend server, and mongoDB for database. 
+I found that it was easier to use mongoDB for our database because we didn't have to create tables to store our data and also because mongoDB supports several methods of backend programming that saved us a lot of time and space. 
+Deliverable 4 required much more debugging than previous deliverables, but I feel we created a successful user management backend that will help us through the remaining deliverables.
 
-Asif: overall, deliverable 4 was by far the most diffcult. Getting the student-overview page to match the information that was entered in the sign up page took me the longest to do. I was able to sucessfully implement the user validation section using regex expressions for the email, name and password. I was able to get a better understanding of using JSON and Ajax to implement the student-overview js file. Overall, I have learned alot from this deliverable that will help when its time to implement a fully functional QCfirst website.
+Asif: overall, deliverable 4 was by far the most difficult. 
+Getting the student-overview page to match the information that was entered in the sign-up page took me the longest to do. 
+I was able to successfully implement the user validation section using regex expressions for the email, name and password. 
+I was able to get a better understanding of using JSON and Ajax to implement the student-overview js file. 
+Overall, I have learned a lot from this deliverable that will help when it's time to implement a fully functional QCfirst website.
 
-#### Contributors:
-Chihoon Kim (https://github.com/jihoonk-1116)<br>
-Asif Gani (https://github.com/ganiasif98)
+## Final Demo <a name="d5"></a>
+
+#### differences between visual design and final outcome
+When developing our final demo, we noticed a difference in the visual designed compared to when we first designed our webpage. 
+One major difference we noticed was that in the visual design, we had multiple pages that handled different functions of the webpage.
+In our final demo, we were able to include bootstrap into our webpage in order to handle pop-up menus causing us to eliminate unnecessary pages that weren't needed. 
+In the student section of the webpage, we were able to convert the search class and enroll page into one by adding a button next to the searched classes that takes you to a mini-window where you can add the class. 
+Overall, our final demo is well-structured and well-developed website that simulates the actions of a cunyfirst webpage.
+
+
+
