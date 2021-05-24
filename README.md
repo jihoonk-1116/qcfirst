@@ -22,7 +22,7 @@ Asif Gani (https://github.com/ganiasif98)
 * Students can view their schedule in the schedule section under the student overview page that is automatically generated once you add a class.<a href ="https://qcfirst-1.jihoonk1116.repl.co/student/html/stu_overview.html">[View Schedule]</a>
 
 ## Instructor Side Features
-* Click the links after log in as student.
+* Click the links after log in as instructor.
 * Instructors are able to add new classes that students can register for by clicking the "register new class" button in the instructor overview page.<a href="https://qcfirst-1.jihoonk1116.repl.co/instructor/html/overview.html">[Register New Class]</a>
 * Instructors are able to view students who register for their class in the roster page.<a href="https://qcfirst-1.jihoonk1116.repl.co/instructor/html/roster.html">[View Roster]</a>
 * Instructors can view their schedule in an auto generated schedule maker.<a href="https://qcfirst-1.jihoonk1116.repl.co/instructor/html/schedule.html">[View Schedule]</a>
