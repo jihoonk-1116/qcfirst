@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background-image: url("../img/annie-spratt-0ZPSX_mQ3xI-unsplash-m.jpg");
 }
 
@@ -31,7 +31,12 @@ section {
   text-align: left;
 }
 
-@media screen and (max-width: 991px) { /* tablet */
+.modal-body > ul {
+  text-align: left;
+}
+
+@media screen and (max-width: 991px) {
+  /* tablet */
 
   table {
     font-size: 14px;

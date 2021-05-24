@@ -15,10 +15,13 @@ window.addEventListener("DOMContentLoaded", function(){
 function registerUser(event) {
     event.preventDefault()
     var r = "";
+    var usercode = Math.floor(Math.random() * 9000) + 1000;
     if(document.getElementById("inst").checked){
         r = document.getElementById('inst').value
+        usercode = "I" + usercode;
     }else if(document.getElementById("stu").checked){
         r = document.getElementById('stu').value
+        usercode = "S" + usercode;
     }else {
         return alert("Choose your role");
     }
@@ -26,9 +29,7 @@ function registerUser(event) {
     const name = document.getElementById('username').value
     const password = document.getElementById('userpw').value
     const email = document.getElementById('useremail').value
-    const code = document.getElementById('code').value
     const department = document.getElementById('dept').value
-    console.log(username, password , email, role, code, department);
     const result = fetch('../../user/signup', {
         method: 'POST',
         headers: {
@@ -36,10 +37,10 @@ function registerUser(event) {
         },
         body: JSON.stringify({
             role,
+            usercode,
             email,
             name,
             password,
-            code,
             department
         })
     })

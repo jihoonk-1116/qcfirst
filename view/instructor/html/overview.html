@@ -23,7 +23,8 @@
           integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <link href="../css/overview.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-    <script src="../js/overview.js"></script>
+    <script defer src="../js/overview.js"></script>
+    <script defer src ="../js/searchfunction.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
@@ -33,14 +34,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Instructor Overview</title>
 </head>
-<script>
-    $(()=>{
-    updateProfile();
-    // $("#submit-img").click((event)=> {
-    //     updateImg(event)
-    // })
-})
-</script>
 <body>
 <main>
     <header class="container">
@@ -73,47 +66,33 @@
             </div>
         </nav>
     </div>
+    <section class="container" id="result-table">
+        <h3 id="result-header"></h3>
+        <table id="search-result" class="table table-hover table-active"> 
+            
+        </table>
+    </section>
     <div class="container emp-profile">
         <div>
             <div class="row">
                 <div class="col-sm-4">
                     <div class="profile-img">
-                        <img src="../img/profile.png" alt="profile image"/>
-                        <button type="button" class="file btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#edit-img">
-                            Change Photo
-                        </button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="edit-img" tabindex="-1" aria-labelledby="edit-imgModalLabel1" aria-hidden="true">
-                            <div class="modal-dialog modal-lg modal-dialog-scrollable">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="edit-imgModalLabel1">Edit profile</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <form enctype = "multipart/form-data" class="modal-body">
-                                        <input id ="avatar" type="image" name="image" accept="image/png, image/jpeg"/> <!--send file to server-->
-                                    </form>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <input id="submit-img" type="submit" value = "submit" class="btn btn-primary" data-bs-dismiss="modal"></input>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <img src="../img/64958-200.png" alt="profile image"/>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="profile-head">
                         <h5 class="name">
-                            Jihoon Kim
+                            Jihoon Kim 
                         </h5>
+                        <h6 id="usercode-1">Code: </h6>
                         <h6 class = "intro">
                             Web Developer and Software Engineer
                         </h6>
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <button type="button" class="btn profile-edit-btn" data-bs-toggle="modal" data-bs-target="#edit">
+                    <button id="edit-button" type="button" class="btn profile-edit-btn" data-bs-toggle="modal" data-bs-target="#edit">
                         Edit Profile
                     </button>
                     <!-- Modal -->
@@ -124,11 +103,9 @@
                                     <h5 class="modal-title" id="editModalLabel1">Edit profile</h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
+                                <form class="modal-body">
                                     <label for="userid">Name</label>
                                     <input class="form-control" id="userid" type="text" name="username" placeholder="Jihoon Kim">
-                                    <label for="useremail">Contact Email</label>
-                                    <input class="form-control" id="useremail" type="email" name="useremail" placeholder="Jihoonk-1116@gmail.com">
                                     <label for="dept">Department</label>
                                     <input class="form-control" id="dept" type="text" name="dept" placeholder="Computer Science">
                                     <label for="phone">Phone</label>
@@ -137,10 +114,10 @@
                                     <input class="form-control" id="prof" type="text" name="prof" placeholder="Full Stack developer">
                                     <label for="intro">Introduction</label>
                                     <textarea class="form-control" id="intro" name="dept" placeholder="Web Developer and Software Engineer"></textarea>
-                                </div>
+                                </form>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                    <button id="save-profile" type="button" class="btn btn-primary" data-bs-dismiss="modal">Save</button>
                                 </div>
                             </div>
                         </div>
@@ -203,7 +180,6 @@
                     <button id="register-btn" type="button" class="btn btn-success btn-xs pull-right" data-bs-toggle="modal" data-bs-target="#register">
                         + Register new class
                     </button>
-                    <!-- Modal -->
                     <div class="modal fade" id="register" tabindex="-1" aria-labelledby="registerModalLabel1" aria-hidden="true">
                         <div class="modal-dialog modal-lg modal-dialog-scrollable">
                             <div class="modal-content">
@@ -216,17 +192,10 @@
                                         <label for="classname">Class Name: </label>
                                         <input id="classname" class="form-control" type="text" name="classname">
                                     </p>
-                                    <p>
-                                        <label for="section">Class Section: </label>
-                                        <input id="section" class="form-control" type="text" name="section">
-                                    </p>
-                                    <p>
-                                        <label for="section">Class Code: </label>
-                                        <input id="code" class="form-control" type="text" name="code">
-                                    </p>
                                     <p id="sem-cap">
                                         <label for="dep">Department: </label>
                                         <select id="dep" name="dep">
+                                            <option value="blank"></option>
                                             <option value="CSCI">CSCI</option>
                                             <option value="MATH">MATH</option>
                                             <option value="BIO">BIO</option>
@@ -235,6 +204,7 @@
                                         </select>
                                         <label for="semester">Semester: </label>
                                         <select id="semester" name="semester">
+                                            <option value="blank"></option>
                                             <option value="spring">Spring</option>
                                             <option value="fall">Fall</option>
                                         </select>
@@ -250,56 +220,56 @@
                                         <label class="form-check-label" for="mon">
                                             Monday
                                         </label>
-                                        <input class="form-time" id="mon-time-start" type="time" name="time1">
-                                        <input class="form-time" id="mon-time-end" type="time" name="time2">
+                                        <input class="mon" id="mon-time-start" type="time" name="time1">
+                                        <input class="mon" id="mon-time-end" type="time" name="time2">
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="tue" id="tue">
                                         <label class="form-check-label" for="tue">
                                             Tuesday
                                         </label>
-                                        <input class="form-time" id="tue-time-start" type="time" name="time1">
-                                        <input class="form-time" id="tue-time-end" type="time" name="time2">
+                                        <input class="tue" id="tue-time-start" type="time" name="time1">
+                                        <input class="tue" id="tue-time-end" type="time" name="time2">
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="wed" id="wed">
                                         <label class="form-check-label" for="wed">
                                             Wednesday
                                         </label>
-                                        <input class="form-time" id="wed-time-start" type="time" name="time1">
-                                        <input class="form-time" id="wed-time-end" type="time" name="time2">
+                                        <input class="wed" id="wed-time-start" type="time" name="time1">
+                                        <input class="wed" id="wed-time-end" type="time" name="time2">
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="thur" id="thur">
                                         <label class="form-check-label" for="thur">
                                             Thursday
                                         </label>
-                                        <input class="form-time" id="thur-time-start" type="time" name="time1">
-                                        <input class="form-time" id="thur-time-end" type="time" name="time2">
+                                        <input class="thur" id="thur-time-start" type="time" name="time1">
+                                        <input class="thur" id="thur-time-end" type="time" name="time2">
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="fri" id="fri">
                                         <label class="form-check-label" for="fri">
                                             Friday
                                         </label>
-                                        <input class="form-time" id="fri-time-start" type="time" name="time1">
-                                        <input class="form-time" id="fri-time-end" type="time" name="time2">
+                                        <input class="fri" id="fri-time-start" type="time" name="time1">
+                                        <input class="fri" id="fri-time-end" type="time" name="time2">
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="sat" id="sat">
                                         <label class="form-check-label" for="sat">
                                             Saturday
                                         </label>
-                                        <input class="form-time" id="sat-time-start" type="time" name="time1">
-                                        <input class="form-time" id="sat-time-end" type="time" name="time2">
+                                        <input class="sat" id="sat-time-start" type="time" name="time1">
+                                        <input class="sat" id="sat-time-end" type="time" name="time2">
                                     </div>
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="sun" id="sun">
                                         <label class="form-check-label" for="sun">
                                             Sunday
                                         </label>
-                                        <input class="form-time" id="sun-time-start" type="time" name="time1">
-                                        <input class="form-time" id="sun-time-end" type="time" name="time2">
+                                        <input class="sun" id="sun-time-start" type="time" name="time1">
+                                        <input class="sun" id="sun-time-end" type="time" name="time2">
                                     </div>
                                     <p>
                                         <label for="location">Location</label>
@@ -307,17 +277,14 @@
                                     </p>
                                     <p>
                                         <label for="class-desc">Class Description</label>
-                                        <textarea class="form-control" id="class-desc" name="class-desc">Class Description</textarea>
+                                        <textarea class="form-control" id="class-desc" name="class-desc"></textarea>
                                     </p>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">Save Class</button>
-                                </div>
+                                <button id = "save-newclass" type="button" class="btn btn-primary" >Add New Class !</button>
                             </div>
                         </div>
-                    </div>
-                    <table class="table table-striped custab">
+                    </div> 
+                    <table id="registered-classes" class="table table-striped table-secondary table-hover custab">
                         <thead>
                             <tr>
                                 <th>Class</th>
@@ -329,7 +296,17 @@
                             </tr>
                         </thead>
                         <tr>
-                            <td>Java</td>
+                        </tr> 
+                    </table>
+                </div>
+            </section>
+        </div>
+    </div>
+</main>
+</body>
+</html>
+
+<!-- <td>Java</td>
                             <td>CS211-24</td>
                             <td>Mon 1:30-2:45, <br>Tue 2:30-3:50</td>
                             <td>Science Building,<br> Room 300</td>
@@ -338,7 +315,6 @@
                                 <button type="button" class="btn btn-info btn-xs detail-btn" data-bs-toggle="modal" data-bs-target="#details0">
                                     Details
                                 </button>
-                                <!-- Modal -->
                                 <div class="modal fade" id="details0" tabindex="-1" aria-labelledby="detailsModalLabel0" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
                                         <div class="modal-content">
@@ -370,7 +346,6 @@
                                 <button type="button" class="btn btn-danger btn-xs" data-bs-toggle="modal" data-bs-target="#del0">
                                 Del
                                 </button>
-                                <!-- Modal -->
                                 <div class="modal fade" id="del0" tabindex="-1" aria-labelledby="delModalLabel0" aria-hidden="true">
                                     <div class="modal-dialog-centered modal-dialog modal-dialog-scrollable">
                                         <div class="modal-content">
@@ -388,35 +363,4 @@
                                         </div>
                                     </div>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Operating System</td>
-                            <td>CS340-24</td>
-                            <td>FRI 1:30-2:45, <br>SUN 2:30-3:50</td>
-                            <td>Science Building,<br> Room 300</td>
-                            <td>Open</td>
-                            <td class="text-center">
-                                <a class="btn btn-info btn-xs detail-btn disabled" href="#">Details</a>
-                                <a href="#" class="btn btn-danger btn-xs disabled">Del</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Internet&Web tech</td>
-                            <td>CS355-24</td>
-                            <td>Mon 4:30-6:45, <br>Tue 4:30-6:45</td>
-                            <td>Science Building,<br> Room 300</td>
-                            <td>Closed</td>
-                            <td class="text-center">
-                                <a class="btn btn-info btn-xs detail-btn disabled" href="#">Details</a>
-                                <a href="#" class="btn btn-danger btn-xs disabled">Del</a>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
-        </div>
-    </div>
-</main>
-</body>
-</html>
+                            </td> -->
