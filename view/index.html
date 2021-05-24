@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--
+  Name: Chihoon Kim
+  Date: 04.20.2021
+  Section: CS 355
+
+  This is the index.html page for the final project of CS355. 
+  It connects with instructor or student overview pages depending on the user's role who wants to access the website.
+  If a user does not have an account, then the user can sign up to access this website via sign up page.
+  This index.html uses Bootstrap for its design. 
+  
+  Citation
+  https://getbootstrap.com/docs/5.0/examples/  
+  https://getbootstrap.com/docs/5.0/getting-started/introduction/
+  Background image is from https://unsplash.com/photos/7JX0-bfiuxQ
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="instructor/js/index.js"></script>
+    <link href="instructor/css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to QCfirst</title>
+</head>
+<body class ="has-bg-img text-center">
+    <main>
+        <img src="/instructor/img/logo.png" alt="logo" width="72" height="57">
+        <h1 class = "d-flex justify-content-center">QC First</h1>
+        <form class = "container col-sm-4 align-items-center">
+            <div id="radios" class="mb-4 d-flex justify-content-center">
+                <div class="form-check">
+                    <input id="stu" type="radio" name="option" value="student" class="btn-check">
+                    <label for="stu" class="btn btn-outline-primary">Student</label>
+                </div>
+                <div class="form-check">
+                    <input id="inst" class="btn-check" type="radio" name="option" value="instructor">
+                    <label for="inst" class="btn btn-outline-primary">Instructor</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <div class="form-floating">
+                    <input class="form-control" id="useremail" type="email" name="id" placeholder="Email address">
+                    <label for="userid">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input class="form-control" id="userpw" type="password" name="pw" placeholder="Password">
+                    <label for="userpw">Password</label>
+                </div>
+            </div>
+            <div class ="d-grid gap-2">
+                <button id="log" class="btn btn-primary btn-block">Log-in</button>
+                <a href="instructor/html/signup.html" class="btn btn-secondary btn-block">Sign up</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,254 @@
+body {
+  background-image: url("../img/annie-spratt-0ZPSX_mQ3xI-unsplash-m.jpg");
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  background-color: #e3f2fd;
+}
+
+nav > a {
+  font-weight: 600;
+}
+
+#reset-keyword{
+  margin-left: 5px;
+}
+
+.emp-profile {
+  margin-top: 15px;
+}
+
+.profile-img {
+  text-align: center;
+  margin-left: -40px;
+}
+
+.profile-img img {
+  width: 40%;
+  height: 150px;
+}
+
+.profile-img .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+
+
+.profile-head h6 {
+  color: #0062cc;
+}
+
+.profile-edit-btn {
+  border: none;
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 2%;
+  font-weight: 600;
+  font-size: 14px;
+  color: #6c757d;
+  cursor: pointer;
+  background-color: #e3f2fd;
+}
+
+.profile-work p {
+  font-size: 12px;
+  color: #818182;
+  font-weight: 600;
+  margin-top: 10%;
+}
+
+.profile-work a {
+  text-decoration: none;
+  color: #495057;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.profile-work ul {
+  list-style: none;
+}
+
+.profile-tab h5 {
+  margin-bottom: 10px;
+  color: #0062cc;
+  font-weight: 600;
+}
+
+.profile-tab label {
+  font-weight: 600;
+}
+
+.profile-tab p {
+  font-weight: 600;
+  color: #0062cc;
+}
+
+.profile-tab {
+  margin-left: -12px;
+}
+
+#info-details {
+  border-top: 2px solid skyblue;
+  border-bottom: 2px solid lightskyblue;
+}
+
+
+
+#myTabContent {
+  margin-top: 20px;
+}
+
+.modal-body label {
+  color: #0062cc;
+  margin: 2px 2px;
+}
+
+#sem-cap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-check label {
+  width: 100px;
+}
+
+#deadline {
+  width: 180px;
+}
+
+.class-info {
+  text-align: left;
+}
+@media screen and (max-width: 991px) {
+  /* tablet */
+  #reset-keyword{
+    float: right;
+    margin-left: 5px;
+    margin-top: 5px;
+  } 
+
+  .profile-img {
+    margin-left: -20px;
+  }
+
+  .modal-body {
+    font-size: 15px;
+  }
+
+  .form-control,
+  .form-control-sm {
+    height: 85%;
+  }
+
+  #capacity {
+    width: 50px;
+    height: 17px;
+  }
+
+  #semester {
+    margin-right: 10px;
+  }
+
+  .table {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 2px 1px 2px 1px;
+  }
+
+  .profile-edit-btn {
+    font-size: 10px;
+  }
+
+  .btn-info,
+  .btn-danger {
+    margin: 4px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  body {
+    font-size: 13px;
+  }
+
+  #logo {
+    width: 40px;
+    height: 30px;
+  }
+
+  .nav-link {
+    padding-left: 0.5px;
+  }
+
+  #searchbar {
+    width: 100%;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+
+  nav {
+    font-size: 10px;
+  }
+
+  .profile-img {
+    height: 85%;
+    width: 75%;
+  }
+
+  .btn {
+    font-size: 9px;
+    padding: 1px 1px 1px 1px;
+  }
+
+  .btn-info,
+  .btn-danger {
+    margin: 4px;
+  }
+
+  .profile-edit-btn {
+    width: 20%;
+    height: 90%;
+    margin-bottom: 5px;
+  }
+
+  .table {
+    font-size: 9px;
+  }
+
+  .modal-body,
+  .modal-body input,
+  .modal-body textarea {
+    font-size: 11px;
+  }
+
+  .form-control,
+  .form-control-sm {
+    height: 85%;
+  }
+
+  #capacity {
+    width: 40px;
+    height: 15px;
+  }
+
+  #sem-cap {
+    gap: 5px;
+  }
+
+  #deadline {
+    width: 150px;
+    height: 30px;
+    margin-left: 5px;
+  }
+
+  .form-time {
+    margin: 2px 2px;
+    width: 25%;
+  }
+}

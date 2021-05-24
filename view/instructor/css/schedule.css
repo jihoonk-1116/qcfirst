@@ -1,0 +1,48 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("../img/annie-spratt-0ZPSX_mQ3xI-unsplash-m.jpg");
+}
+
+nav {
+  background-color: #e3f2fd;
+}
+
+nav > a {
+  font-weight: 600;
+}
+
+table {
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 991px) { /* tablet */
+
+  table {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #logo {
+    width: 40px;
+    height: 30px;
+  }
+
+  .nav-link {
+    padding: 0.5px;
+  }
+
+  #searchbar {
+    width: 100%;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+
+  nav {
+    font-size: 10px;
+  }
+
+  table {
+    font-size: 6px;
+  }
+}

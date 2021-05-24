@@ -1,0 +1,197 @@
+body {
+  background-image: url("../img/annie-spratt-0ZPSX_mQ3xI-unsplash-m.jpg");
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  background-color: #d34c67;
+}
+
+nav > a {
+  font-weight: 600;
+}
+
+#info-details {
+  border-top: 2px solid #d34c67;
+  border-bottom: 2px solid #d34c67;
+}
+
+#register-btn {
+  background-color: #d34c67;
+}
+
+#myTabContent {
+  margin-top: 17px;
+}
+
+.modal-body label {
+  color: #0062cc;
+  font-weight: 600;
+  margin: 2px 2px;
+}
+.modal-content {
+  background-color: #f8f7f7;
+}
+#sem-cap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-check label {
+  width: 100px;
+}
+
+#line {
+  border-top: #0062cc dotted 2px;
+  position: relative;
+  top: 20px;
+  text-align: center;
+  margin-bottom: -10px;
+}
+#or {
+  position: relative;
+  top: -17px;
+}
+#update {
+  margin-top: 20px;
+  border-top: #d34c67 solid 2px;
+  text-align: center;
+}
+.class-info {
+  text-align: left;
+}
+#header {
+  margin-top: 10px;
+  display: none;
+}
+#search-body {
+  margin: 25px 10px;
+  background-color: #f8cdcd3b;
+}
+@media screen and (max-width: 991px) {
+  /* tablet */
+
+  .profile-img {
+    margin-left: -20px;
+  }
+
+  .modal-body {
+    font-size: 15px;
+  }
+
+  .form-control,
+  .form-control-sm {
+    height: 85%;
+  }
+
+  #capacity {
+    width: 50px;
+    height: 17px;
+  }
+
+  #semester {
+    margin-right: 10px;
+  }
+
+  .table {
+    font-size: 13px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 2px 1px 2px 1px;
+  }
+  h3 {
+    margin-top: 20px;
+  }
+  .profile-edit-btn {
+    font-size: 10px;
+  }
+
+  .btn-info,
+  .btn-danger {
+    margin: 4px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  body {
+    font-size: 13px;
+  }
+
+  #logo {
+    width: 40px;
+    height: 30px;
+  }
+
+  .nav-link {
+    padding-left: 0.5px;
+  }
+
+  #searchbar {
+    width: 100%;
+    font-size: 10px;
+    margin-left: 5px;
+  }
+
+  nav {
+    font-size: 10px;
+  }
+
+  .profile-img {
+    height: 85%;
+    width: 75%;
+  }
+
+  .btn {
+    font-size: 9px;
+    padding: 1px 1px 1px 1px;
+  }
+
+  .btn-info,
+  .btn-danger {
+    margin: 4px;
+  }
+
+  .profile-edit-btn {
+    width: 20%;
+    height: 90%;
+    margin-bottom: 5px;
+  }
+
+  .table {
+    font-size: 9px;
+  }
+
+  .modal-body,
+  .modal-body input,
+  .modal-body textarea {
+    font-size: 11px;
+  }
+
+  .form-control,
+  .form-control-sm {
+    height: 85%;
+  }
+
+  #capacity {
+    width: 40px;
+    height: 15px;
+  }
+
+  #sem-cap {
+    gap: 5px;
+  }
+
+  #deadline {
+    width: 150px;
+    height: 30px;
+    margin-left: 5px;
+  }
+
+  .form-time {
+    margin: 2px 2px;
+    width: 25%;
+  }
+}

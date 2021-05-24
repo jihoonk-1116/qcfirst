@@ -1,0 +1,60 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+  background-image: url("../img/jj-ying-7JX0-bfiuxQ-unsplash-l.jpg");
+}
+
+form {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12pt;
+  margin: 30px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: white;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+.form-check {
+  padding-right: 24px;
+}
+
+.form-signin {
+  width: 100%;
+  font-weight: 400;
+}
+
+.form-signin input {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+#radios {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 991px) { /* tablet */
+
+  body {
+    background-image: url("../img/jj-ying-7JX0-bfiuxQ-unsplash-m.jpg");
+  }
+}
+
+@media screen and (max-width: 530px) {
+  body {
+    background-image: url("../img/jj-ying-7JX0-bfiuxQ-unsplash-sm.jpg");
+  }
+
+  img {
+    margin-top: 250px;
+  }
+}
