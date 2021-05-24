@@ -11,7 +11,11 @@ function updateSchedule(){
     $.ajax({
         url:"../../inst/updatecourse",
         type:"GET",
-        headers :{"X-Auth" : token}
+        headers :{"X-Auth" : token},
+        error:function(res){
+               let err = res.responseJSON
+               alert(err.error);
+           }
     })
     .done(function(data){
         let index=0;
