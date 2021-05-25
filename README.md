@@ -222,7 +222,7 @@ The variables enroll-able and delectable are assigned if its status is closed in
 
 ## Search management Deliverable <a name="d6"></a>
 
-For the search functionality, search algorithm is implemented on the backend side. Since this project is online class platform, keywords for searching are limited such as class', instructor's and student's information. Also, the assigned user code when an user sign up and the course code is used because each code starts with a fixed prefix; for example, student and instructor code are composed of S + 4 digit number and I+ 4 digit number respectively, and course code is the first character of department of the class + 4 digit number as well.
+For the search functionality, search algorithm is implemented on the backend side. Since this project is online class platform, keywords for searching are limited such as class', instructor's and student's information. Also, the assigned user code when an user sign up and the course code is used because each code starts with a fixed prefix; for example, student and instructor code are composed of S + 4 digit number and I+ 4 digit number respectively, and course code is the first character of department of the class + 4 digit number as well.<br>
 ![](/img_for_readme/course-prefix.png)
 ![](/img_for_readme/user-prefix.png)
 
