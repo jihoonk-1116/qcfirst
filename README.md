@@ -205,23 +205,33 @@ I was able to get a better understanding of using JSON and Ajax to implement the
 Overall, I have learned a lot from this deliverable that will help when it's time to implement a fully functional QCfirst website.
 
 ## Course management Deliverable <a name="d5"></a>
- Course management is implemented using Mongoose method that allow us to easily use for MongoDB. Two models are used to support course mangement.  
+ Course management is implemented using Mongoose method that allow us to easily use for MongoDB. Two models are used to support course management.  
  ![image](https://user-images.githubusercontent.com/76544061/119433421-36a0b800-bce4-11eb-9f96-62af150b580b.png)
 ![image](https://user-images.githubusercontent.com/76544061/119433428-3b656c00-bce4-11eb-95ae-2bc4c3df3322.png)
-The course model is for a course that an instuctor register. and the enrolled model is for a course that an student register.
+The course model is for a course that an instructor register. and the enrolled model is for a course that an student register.
 A course has status field which indicates this class can be registered by student. Its status is changed by class' capacity and the number of enrolled student and deadline. The number of enrolled students is assigned in the backend side:
-Enroll class API <br>
+<br>Enroll class API & Drop class API<br>
 ![image](https://user-images.githubusercontent.com/76544061/119434359-08bc7300-bce6-11eb-996c-8cee09bef59a.png) 
-Drop class API <br>
 ![image](https://user-images.githubusercontent.com/76544061/119434380-13770800-bce6-11eb-805c-55170ac5953a.png) 
 
 
 The algorithms for judging status by student number and deadline is below:<br>
 
 ![image](https://user-images.githubusercontent.com/76544061/119434045-613f4080-bce5-11eb-8b67-c140992ad88b.png)<br>
-The variables enrollable and deletable are assigned if its status is closed in order to inactivate delete opration for instructor and enroll operation for student in the front level. 
+The variables enroll-able and delectable are assigned if its status is closed in order to inactivate delete operation for instructor and enroll operation for student in the front level. 
 
 ## Search management Deliverable <a name="d6"></a>
+
+For the search functionality, search algorithm is implemented on the backend side. Since this project is online class platform, keywords for searching are limited such as class', instructor's and student's information. Also, the assigned user code when an user sign up and the course code is used because each code starts with a fixed prefix; for example, student and instructor code are composed of S + 4 digit number and I+ 4 digit number respectively, and course code is the first character of department of the class + 4 digit number as well.
+![](course-prefix.png)
+![](user-prefix.png)
+
+Search API is called with user input string and this API utilizes dynamic routing to be able to handle several keyword with single API. <br>
+Front request & API endpoint :<br>     
+![](search-reques.png)![](search-server.png)<br>
+Then, the search algorithm judges the keyword to retrieve MongoDB. And the front end parses the response data and create HTML to display the result on the browser as table with modal structure.
+![](search-html.png)
+
 
 ## Final Demo <a name="d7"></a>
 
