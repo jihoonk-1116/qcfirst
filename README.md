@@ -80,12 +80,12 @@ findOne(key).
 ## Login Page 
 # <a name="login"></a>
 ![login](visual_design/imgs/login.png)
-Log-in page decides that a user is a student or an instructor. <a href="instructor\index.html" target="_blank">[Code]</a><a href="https://jihoonk-1116.github.io/final/index.html" target="_blank"> [Page]</a>
+Log-in page decides that a user is a student or an instructor. 
 
 ## Sign-up page
 # <a name="sign-up"></a>
 ![sign-up](visual_design/imgs/signup.png)
-Users who want to sign-up are required their unique given number. <a href="instructor\signup.html" target="_blank">[Code]</a><a href="https://jihoonk-1116.github.io/final/signup.html" target="_blank"> [Page]</a>
+Users who want to sign-up are required their unique given number. 
 
 # Student side
 
@@ -93,25 +93,21 @@ Users who want to sign-up are required their unique given number. <a href="instr
 # <a name="student"></a>
 ![student-overview](visual_design/imgs/Student-Overview.png)
 On this page you are able to view the information about the student, view their schedule for that semester, and a link to add classes. 
-<a href="Student\student_overview.html" target="_blank">[Code]</a><a href="https://ganiasif98.github.io/Final/student_overview.html" target="_blank"> [Page]</a>
 
 ### Edit Profile Mini Window
 # <a name="edit-student-profile"></a>
 ![edit-student-profile](visual_design/imgs/Edit-Profile.png)
 This is a window that will be opened when the edit profile button is clicked, and here you can update the information about the student.
-<a href="Student\edit_profile.html" target="_blank">[Code]</a><a href="https://ganiasif98.github.io/Final/edit_profile.html" target="_blank"> [Page]</a>
 
 ### Add Class
 # <a name="add-class"></a>
 ![add-class](visual_design/imgs/Add-Class.png)
 Here students can search classes depending upon which college they go to, the semester they want to search classes from, as well as the course #, or name. Also have the option to modify the search or clear the search.
-<a href="Student\search_class.html" target="_blank">[Code]</a><a href="https://ganiasif98.github.io/Final/search_class.html" target="_blank"> [Page]</a>
 
 ### Enroll Class
 # <a name="enroll-class"></a>
 ![enroll-class](visual_design/imgs/Enroll-Class.png)
 Here students can view all the classes that corresponds to the given search in the previous window By the clicking the 3 dots you are redirected to another link where you can add the class.
-<a href="Student\enroll_class.html" target="_blank">[Code]</a><a href="https://ganiasif98.github.io/Final/enroll_class.html" target="_blank"> [Page]</a>
 
 ### Detail Page 1
 <a href="Student\class_detail.html" target="_blank">[Code]</a><a href="https://ganiasif98.github.io/Final/class_detail.html" target="_blank"> [Page]</a>
