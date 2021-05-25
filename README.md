@@ -28,11 +28,12 @@ Asif Gani (https://github.com/ganiasif98)
 * Instructors can view their schedule in an auto generated schedule maker.<a href="https://qcfirst-1.jihoonk1116.repl.co/instructor/html/schedule.html">[View Schedule]</a>
 
 # Deliverables
+
+* [CSS Deliverable](#d3)
+* [User management Deliverable](#d4)
 * [Search Deliverable](#d6)
 * [Course management Deliverable](#d5)
-* [User management Deliverable](#d4)
-* [CSS Deliverable](#d3)
-* [Final Demo](#d5)
+* [Final Demo](#d7)
 
 # Frontend/Client-Side Technologies
 In our final demo the choice of frontend we decided on was incorporating bootstrap into our html and CSS for styling. 
