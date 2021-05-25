@@ -223,14 +223,14 @@ The variables enroll-able and delectable are assigned if its status is closed in
 ## Search management Deliverable <a name="d6"></a>
 
 For the search functionality, search algorithm is implemented on the backend side. Since this project is online class platform, keywords for searching are limited such as class', instructor's and student's information. Also, the assigned user code when an user sign up and the course code is used because each code starts with a fixed prefix; for example, student and instructor code are composed of S + 4 digit number and I+ 4 digit number respectively, and course code is the first character of department of the class + 4 digit number as well.
-![](course-prefix.png)
-![](user-prefix.png)
+![](/img_for_readme/course-prefix.png)
+![](/img_for_readme/user-prefix.png)
 
 Search API is called with user input string and this API utilizes dynamic routing to be able to handle several keyword with single API. <br>
 Front request & API endpoint :<br>     
-![](search-reques.png)![](search-server.png)<br>
+![](search-reques.png)![](/img_for_readme/search-server.png)<br>
 Then, the search algorithm judges the keyword to retrieve MongoDB. And the front end parses the response data and create HTML to display the result on the browser as table with modal structure.
-![](search-html.png)
+![](/img_for_readme/search-html.png)
 
 
 ## Final Demo <a name="d7"></a>
