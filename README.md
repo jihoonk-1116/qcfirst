@@ -28,8 +28,8 @@ Asif Gani (https://github.com/ganiasif98)
 * Instructors can view their schedule in an auto generated schedule maker.<a href="https://qcfirst-1.jihoonk1116.repl.co/instructor/html/schedule.html">[View Schedule]</a>
 
 # Deliverables
-* [Search Deliverable](#d4)
-* [Course management Deliverable](#d4)
+* [Search Deliverable](#d6)
+* [Course management Deliverable](#d5)
 * [User management Deliverable](#d4)
 * [CSS Deliverable](#d3)
 * [Final Demo](#d5)
@@ -42,7 +42,6 @@ make an AJAX request to the backend server.
 # Backend/Server-Side Technologies 
 In our final demo, the backend that we mainly used was nodejs, express framework and mongoDB.
 We used express because it is one of nodejs framework that made it really simple to configure a server. 
-
 
 # Choice of Database
 For our database choice we went with monogDB. We used MongoDB because 
@@ -205,7 +204,26 @@ I was able to successfully implement the user validation section using regex exp
 I was able to get a better understanding of using JSON and Ajax to implement the student-overview js file. 
 Overall, I have learned a lot from this deliverable that will help when it's time to implement a fully functional QCfirst website.
 
-## Final Demo <a name="d5"></a>
+## Course management Deliverable <a name="d5"></a>
+ Course management is implemented using Mongoose method that allow us to easily use for MongoDB. Two models are used to support course mangement.  
+ ![image](https://user-images.githubusercontent.com/76544061/119433421-36a0b800-bce4-11eb-9f96-62af150b580b.png)
+![image](https://user-images.githubusercontent.com/76544061/119433428-3b656c00-bce4-11eb-95ae-2bc4c3df3322.png)
+The course model is for a course that an instuctor register. and the enrolled model is for a course that an student register.
+A course has status field which indicates this class can be registered by student. Its status is changed by class' capacity and the number of enrolled student and deadline. The number of enrolled students is assigned in the backend side:
+Enroll class API <br>
+![image](https://user-images.githubusercontent.com/76544061/119434359-08bc7300-bce6-11eb-996c-8cee09bef59a.png) 
+Drop class API <br>
+![image](https://user-images.githubusercontent.com/76544061/119434380-13770800-bce6-11eb-805c-55170ac5953a.png) 
+
+
+The algorithms for judging status by student number and deadline is below:<br>
+
+![image](https://user-images.githubusercontent.com/76544061/119434045-613f4080-bce5-11eb-8b67-c140992ad88b.png)<br>
+The variables enrollable and deletable are assigned if its status is closed in order to inactivate delete opration for instructor and enroll operation for student in the front level. 
+
+## Search management Deliverable <a name="d6"></a>
+
+## Final Demo <a name="d7"></a>
 
 #### differences between visual design and final outcome
 When developing our final demo, we noticed a difference in the visual designed compared to when we first designed our webpage. 
