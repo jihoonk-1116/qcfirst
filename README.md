@@ -15,14 +15,14 @@ Asif Gani (https://github.com/ganiasif98)
 # List of Features
 
 ## Student Side Features
-* Click the links after log in as student.
+* Click the links after log in the website as student.
 * Students are able to edit profile information.<a href ="https://qcfirst-2.jihoonk1116.repl.co/student/html/stu_overview.html">[Edit Profile]</a>
 * Students can search and enroll classes.<a href ="https://qcfirst-2.jihoonk1116.repl.co/student/html/search_class.html">[Search and Enroll Class]</a>
 * Students are able to drop or view classes. Classes must be added in order for a student to drop or view the class.<a href ="https://qcfirst-2.jihoonk1116.repl.co/student/html/enroll_class.html">[Drop or View Class]</a>
 * Students can view their schedule in the schedule section under the student overview page that is automatically generated once you add a class.<a href ="https://qcfirst-2.jihoonk1116.repl.co/student/html/stu_overview.html">[View Schedule]</a>
 
 ## Instructor Side Features
-* Click the links after log in as instructor.
+* Click the links after log in the website as instructor.
 * Instructors are able to add new classes that students can register for by clicking the "register new class" button in the instructor overview page.<a href="https://qcfirst-2.jihoonk1116.repl.co/instructor/html/overview.html">[Register New Class]</a>
 * Instructors are able to view students who register for their class in the roster page.<a href="https://qcfirst-2.jihoonk1116.repl.co/instructor/html/roster.html">[View Roster]</a>
 * Instructors can view their schedule in an auto generated schedule maker.<a href="https://qcfirst-2.jihoonk1116.repl.co/instructor/html/schedule.html">[View Schedule]</a>
