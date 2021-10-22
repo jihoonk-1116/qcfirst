@@ -3,6 +3,8 @@
 The final programming project of CS355
 <a href="https://qcfirst-2.jihoonk1116.repl.co"> [liva app]</a> host by Repl.it
 
+#### For admin login, ID: admin , PW: admin
+You can check user search log, such as keyword, search result, date and by who, at the admin page!
 
 <a href="https://github.com/jihoonk-1116/qcfirst/tree/main/apps">Server side source code</a> - Chihoon Kim & Asif Gani <br>
 <a href="https://github.com/jihoonk-1116/qcfirst/tree/main/view/student">Student side source code</a> - Asif Gani<br>
