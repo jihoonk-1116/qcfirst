@@ -6,7 +6,7 @@ const bodyParser = require('body-parser');
 
 app.use(express.static(path.join(__dirname,'view')));
 
-mongoose.connect("mongodb+srv://JihoonDB:6581139a@firstdb.irfsc.mongodb.net/firstDB?retryWrites=true&w=majority",{
+mongoose.connect("mongodb+srv://<password>@firstdb.irfsc.mongodb.net/firstDB?retryWrites=true&w=majority",{
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
