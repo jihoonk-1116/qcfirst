@@ -1,7 +1,6 @@
 ﻿# Welcome to QCfirst
 
 The final programming project of CS355
-<a href="https://qcfirst-2.jihoonk1116.repl.co"> [liva app]</a> host by Repl.it
 
 #### For admin login, ID: admin , PW: admin
 You can check user search log, such as keyword, search result, date and by who, at the admin page!
